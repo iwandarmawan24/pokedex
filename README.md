@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+**PokemonApp**
 
-First, run the development server:
+**See on live on :** [here](https://pedantic-albattani-ccb9a7.netlify.app/) (https://pedantic-albattani-ccb9a7.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+**How to run in local:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ - clone this repository
+ - run `npm install`
+ - run `npm run dev`
+ - open in `0.0.0.0:3000` or `localhost:3000`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+build with
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Libraries** :
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+ -   NextJs
+    
+ -   Graphql and Apollo Client
+    
+ -   Emotion (css in js library)
+    
+ -   Swiper Js Carousel library
+    
+ -   Framer in Motion
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Endpoint** : Pokemon API (https://graphql-pokeapi.vercel.app/)
 
-## Learn More
+**How to use It**
 
-To learn more about Next.js, take a look at the following resources:
+First you will see some list of cards , so you can swipe to choose ,
+there are 2 button in the below the card 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![enter image description here](https://lh3.googleusercontent.com/pw/AM-JKLXIuOZ0ITXM9NoKfe2_Jrsy0f9XVy5lHgtbJBMrU9M4ZfEvncLRuUgbW6CK9dRJ6kj9adHMzHhhGtOPJoern0MdmCJhQCuQaoHBNvFpp_bhxstqzIq_bciTHPlQGgsJsqOOQI5UomYnPnwvpaL354B5=w542-h578-no?authuser=0)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+ - `Look this pokemon button detail` is the button for you to see the detail of currently seen pokemon you see in the card list 
+ - `Refresh the cards` is the button if you want to randomize the list of cards
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Detail Page**
+once you click the `Look This Pokemon Details` button , you'll soon redirect to detail page, in there you'll see the card contain name, species, moves, and other attributes that pokemon has.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+you have to click `catch this pokemon` button and you'll see the result with 50% probabilities you'll catch or either you'll lose.
+if you lose you'll see try again button and you'll redirected to the home page and see the cardlist again.
+
+but if you win you'll see the text input that you should put some nickname in it with some of text validations and some nickname validation if you have same pokemon with same nickname.
+
+**Collection Page**
+in this page you can see your collection and remove the collection you want just with click the button `remove`
+
+**note :**
+you can catch the same pokemon whether you already have inside your collection but you have to give the different nickname from the one or some you already have in your collection. the app will let you know if you giving your pokemon the same nickname with the text alert.
+
